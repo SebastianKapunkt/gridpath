@@ -4,11 +4,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="GridPath simple small riddle game.">
+  <meta name="description" content="Index simple small riddle game.">
   <meta name="author" content="Sebastian Kindt">
 
-  <title>GridPath - Sebastian Kindt</title>
-  <link rel="stylesheet" type="text/css" href="css/gridpath.css"/>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/gridpath-152.png">
+  <meta name="theme-color" content="#222222"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#222222">
+  <meta name="apple-mobile-web-app-title" content="GridPath">
+  <meta name="msapplication-TileImage" content="images/gridpath-144.png">
+  <meta name="msapplication-TileColor" content="#222222">
+
+  <title>Index - Sebastian Kindt</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css"/>
 </head>
 <body>
   <dialog id="settings-dialog">
@@ -33,6 +43,7 @@
   </div>
   <div class="controls">
     <button id="settings-button">grid size</button>
+    <button id="pwa-install" onclick="installPwa()" style="display: none;">Install</button>
     <div class="control control__up" onclick="moveDirection('up')">
       &uarr;
     </div>
@@ -48,6 +59,6 @@
   </div>
   <div id="build">24</div>
   <div id="what"></div>
-  <script src="js/gridPath.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>

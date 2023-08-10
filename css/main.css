@@ -26,7 +26,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        "settings up ."
+        "settings up pwa-install"
         "left down right";
     margin-left: -15px;
 }
@@ -126,6 +126,15 @@ body {
 #settings-button:hover {
     text-decoration: underline;
     text-decoration-color: #f2c94c;;
+}
+
+#pwa-install {
+    grid-area: pwa-install;
+    color: #f2c94c;
+    background: #222;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
 }
 
 #settings-dialog {
